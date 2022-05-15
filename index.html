@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ludo Game</title>
+</head>
+
+<body>
+    <div class="rootContainer">
+        <div class="diceContainer">
+            <h1 id="Winner_name"></h1>
+            <div class="diceInfoContainer">
+                <h2 class="player_name" id='playerColor'>Player number(Color)</h2>
+                <img src="images/start_dice.png" alt="" srcset="" id="dice_1" class="dice_img">
+                <h2 class="player_name" id='playerColor'>Dice Result</h2>
+            </div>
+            <button id="dice">Roll Dice</button>
+        </div>
+      
+        <div class="ludoContainer">
+            <div id="topContainer">
+                <div id="greenContainer">
+                    <div class="tokenContainer" id="greenTokenContainer">
+                        <div id="GreenfirstTokenBoundry" class="GreentokenCont inside">
+                            <button id="firstTokenGreenBtn" class="GreentokenItem"></button>
+                        </div>
+                        <div id="GreensecendTokenBoundry" class="GreentokenCont inside">
+                            <button id="secendTokenGreenBtn" class="GreentokenItem"></button>
+                        </div>
+                        <div id="GreenthirdTokenBoundry" class="GreentokenCont inside">
+                            <button id="thirdTokenGreenBtn" class="GreentokenItem"></button>
+                        </div>
+                        <div id="GreenforthTokenBoundry" class="GreentokenCont inside">
+                            <button id="forthTokenGreenBtn" class="GreentokenItem"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="yellowPlayingArea">
+                    <table CELLSPACING=0 id="yellowTable">
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_50 r_route_24 g_route_11 b_route_37"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_51 r_route_25 g_route_12 b_route_38"></td>
+                            <td class="bRoute rRoute gRoute r_route_26 g_route_13 b_route_39"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_49 r_route_23 g_route_10 b_route_36"></td>
+                            <td class="yellowSaveArea yRoute y_route_52"></td>
+                            <td class="yellowSaveArea yRoute bRoute rRoute gRoute y_route_1 r_route_27 g_route_14 b_route_40"></td>
+                        </tr>
+                        <tr>
+                            <td class="yellowSaveArea yRoute bRoute rRoute gRoute y_route_48 r_route_22 g_route_9 b_route_35"></td>
+                            <td class="yellowSaveArea yRoute y_route_53"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_2 r_route_28 g_route_15 b_route_41"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_47 r_route_21 g_route_8 b_route_34"></td>
+                            <td class="yellowSaveArea yRoute y_route_54"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_3 r_route_29 g_route_16 b_route_42"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_46 r_route_20 g_route_7 b_route_33"></td>
+                            <td class="yellowSaveArea yRoute y_route_55"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_4 r_route_30 g_route_17 b_route_43"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_45 r_route_19 g_route_6 b_route_32"></td>
+                            <td class="yellowSaveArea yRoute y_route_56"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_5 r_route_31 g_route_18 b_route_44"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="yellowContainer">
+                    <div class="tokenContainer" id="yellowTokenContainer">
+                        <div id="YellowfirstTokenBoundry" class="YellowtokenCont inside">
+                            <button id="firstTokenYellowBtn" class="YellowtokenItem"></button>
+                        </div>
+                        <div id="YellowsecendTokenBoundry" class="YellowtokenCont inside">
+                            <button id="secendTokenYellowBtn" class="YellowtokenItem"></button>
+                        </div>
+                        <div id="YellowthirdTokenBoundry" class="YellowtokenCont inside">
+                            <button id="thirdTokenYellowBtn" class="YellowtokenItem"></button>
+                        </div>
+                        <div id="YellowforthTokenBoundry" class="YellowtokenCont inside">
+                            <button id="forthTokenYellowBtn" class="YellowtokenItem"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="middleContainer">
+                <div id="greenPlayingArea">
+                    <table CELLSPACING=0>
+                        <tr>
+                            <td class="yRoute bRoute rRoute y_route_39 r_route_13 b_route_26"></td>
+                            <td class="greenSaveArea yRoute bRoute rRoute gRoute y_route_40 r_route_14 g_route_1 b_route_27"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_41 r_route_15 g_route_2 b_route_28"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_42 r_route_16 g_route_3 b_route_29"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_43 r_route_17 g_route_4 b_route_30"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_44 r_route_18 g_route_5 b_route_31"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_38 r_route_12 g_route_51 b_route_25"></td>
+                            <td class="greenSaveArea gRoute g_route_52"></td>
+                            <td class="greenSaveArea gRoute g_route_53"></td>
+                            <td class="greenSaveArea gRoute g_route_54"></td>
+                            <td class="greenSaveArea gRoute g_route_55"></td>
+                            <td class="greenSaveArea gRoute g_route_56"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_37 r_route_11 g_route_50 b_route_24"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_36 r_route_10 g_route_49 b_route_23"></td>
+                            <td class="greenSaveArea yRoute bRoute rRoute gRoute y_route_35 r_route_9 g_route_48 b_route_22"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_34 r_route_8 g_route_47 b_route_21"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_33 r_route_7 g_route_46 b_route_20"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_32 r_route_6 g_route_45 b_route_19"></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div id="winningDestinationContainer">
+                    <div id="triangle-Yellow">
+                        1
+                    </div>
+                    <div id="triangle-Green">2</div>
+                    <div id="triangle-Blue">3</div>
+                    <div id="triangle-Red">4</div>
+                </div>
+                <div id="bluePlayingArea">
+                    <table CELLSPACING=0>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_6 r_route_32 g_route_19 b_route_45"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_7 r_route_33 g_route_20 b_route_46"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_8 r_route_34 g_route_21 b_route_47"></td>
+                            <td class="blueSaveArea yRoute bRoute rRoute gRoute y_route_9 r_route_35 g_route_22 b_route_48"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_10 r_route_36 g_route_23 b_route_49"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_11 r_route_37 g_route_24 b_route_50"></td>
+                        </tr>
+                        <tr>
+                            <td class="blueSaveArea bRoute b_route_56"></td>
+                            <td class="blueSaveArea bRoute b_route_55"></td>
+                            <td class="blueSaveArea bRoute b_route_54"></td>
+                            <td class="blueSaveArea bRoute b_route_53"></td>
+                            <td class="blueSaveArea bRoute b_route_52"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_12 r_route_38 g_route_25 b_route_51"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_18 r_route_44 g_route_31 b_route_5"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_17 r_route_43 g_route_30 b_route_4"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_16 r_route_42 g_route_29 b_route_3"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_15 r_route_41 g_route_28 b_route_2"></td>
+                            <td class="blueSaveArea yRoute bRoute rRoute gRoute y_route_14 r_route_40 g_route_27 b_route_1"></td>
+                            <td class="yRoute rRoute gRoute y_route_13 r_route_39 g_route_26"></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="bottomContainer">
+                <div id="redContainer">
+                    <div class="tokenContainer" id="RedTokenContainer">
+                        <div id="RedfirstTokenBoundry" class="RedtokenCont inside">
+                            <button id="firstTokenRedBtn" class="RedtokenItem"></button>
+                        </div>
+                        <div id="RedsecendTokenBoundry" class="RedtokenCont inside">
+                            <button id="secendTokenRedBtn" class="RedtokenItem"></button>
+                        </div>
+                        <div id="RedthirdTokenBoundry" class="RedtokenCont inside">
+                            <button id="thirdTokenRedBtn" class="RedtokenItem"></button>
+                        </div>
+                        <div id="RedforthTokenBoundry" class="RedtokenCont inside">
+                            <button id="forthTokenRedBtn" class="RedtokenItem"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="redPlayingArea">
+                    <table CELLSPACING=0>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_31 r_route_5 g_route_44 b_route_18"></td>
+                            <td class="redSaveArea rRoute r_route_56"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_19 r_route_45 g_route_32 b_route_6"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_30 r_route_4 g_route_43 b_route_17"></td>
+                            <td class="redSaveArea rRoute r_route_55"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_20 r_route_46 g_route_33 b_route_7"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_29 r_route_3 g_route_42 b_route_16"></td>
+                            <td class="redSaveArea rRoute r_route_54"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_21 r_route_47 g_route_34 b_route_8"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute rRoute gRoute y_route_28 r_route_2 g_route_41 b_route_15"></td>
+                            <td class="redSaveArea rRoute r_route_53"></td>
+                            <td class="redSaveArea yRoute bRoute rRoute gRoute y_route_22 r_route_48 g_route_35 b_route_9"></td>
+                        </tr>
+                        <tr>
+                            <td class="redSaveArea yRoute bRoute rRoute gRoute y_route_27 r_route_1 g_route_40 b_route_14"></td>
+                            <td class="redSaveArea rRoute r_route_52"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_23 r_route_49 g_route_36 b_route_10"></td>
+                        </tr>
+                        <tr>
+                            <td class="yRoute bRoute gRoute y_route_26 g_route_39 b_route_13"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_25 r_route_51 g_route_38 b_route_12"></td>
+                            <td class="yRoute bRoute rRoute gRoute y_route_24 r_route_50 g_route_37 b_route_11"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="blueContainer">
+                    <div class="tokenContainer" id="blueTokenContainer">
+                        <div id="BluefirstTokenBoundry" class="BluetokenCont inside">
+                            <button id="firstTokenBlueBtn" class="BluetokenItem"></button>
+                        </div>
+                        <div id="BluesecendTokenBoundry" class="BluetokenCont inside">
+                            <button id="secendTokenBlueBtn" class="BluetokenItem"></button>
+                        </div>
+                        <div id="BluethirdTokenBoundry" class="BluetokenCont inside">
+                            <button id="thirdTokenBlueBtn" class="BluetokenItem"></button>
+                        </div>
+                        <div id="BlueforthTokenBoundry" class="BluetokenCont inside">
+                            <button id="forthTokenBlueBtn" class="BluetokenItem"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
